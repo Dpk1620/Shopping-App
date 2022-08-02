@@ -20,7 +20,7 @@ Your code will be evaluated on:
 - rendering performance
 - database schema
 
-Also we would like you to use git repo when you start coding so we can check your commits and your fluency with github/gitlab
+Also we would like you to use git repo when you start coding so we can check your commits and your fluency with github/gitlab. Add a separate commit so we know how you use commit standards and at same time how good you can breakup tasks while doing commit of code.
 ## Technologies to use
 We'd like to see your implementation using the following technologies:
 ## FrontEnd
