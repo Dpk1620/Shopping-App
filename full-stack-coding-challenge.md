@@ -18,21 +18,28 @@ Your code will be evaluated on:
 - legibility
 - appearance
 - rendering performance
+- database schema
+
 Also we would like you to use git repo when you start coding so we can check your commits and your fluency with github/gitlab
 ## Technologies to use
 We'd like to see your implementation using the following technologies:
 ## FrontEnd
 - React (hooks)
 - Redux (redux-toolkit)
-- React-query
-- MUI
-- typescript
-## BackEnd
-- node / nest
-- mongodb
-- typescript
+- React-query or any other similar client
+- MUI or Bootstrap
+- Typescript
+
 **Note:** Focus more on business logic instead of styling your app
+
+## BackEnd
+- Express / Nest with Typescript
+- Mongodb or any other SQL database of your choice
+- If not sharing project in typescript please do mention that before hand
+
+
 ## How to submit the challenge solution?
 After you finished your app, please follow the instructions below:
-1. share your repository link to us
-2. mention the time you spent on this
+1. Share your repository link to us - can be a public repository on gitlab or github
+2. Mention the time you spent on this
+3. You can use any boilerplate from internet instead of setting up own from scratch to save time.
