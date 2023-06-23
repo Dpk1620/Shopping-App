@@ -31,13 +31,11 @@ export default slice.reducer;
 
 const { productRequested, productReceived, productRequestFailed } = slice.actions;
 
-const url = "/";
 
 export const loadproduct = () => (dispatch) => {
     console.log(dispatch,"dispatch action check product,js")
     return dispatch(
         apiCallBegan({
-            url,
             onStart: productRequested.type,
             onSuccess: productReceived.type,
             onError: productRequestFailed.type,
