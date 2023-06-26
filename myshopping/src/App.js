@@ -1,6 +1,5 @@
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import ProductList from "./components/products.js";
-import "./App.css";
 
 const App = () => {
     return (

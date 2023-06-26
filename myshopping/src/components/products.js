@@ -1,24 +1,38 @@
 import { useDispatch, useSelector } from "react-redux";
-import { loadproduct } from "../store/product";
+import { fetchProducts } from "../store/product";
 import { useEffect } from "react";
-// import { Link } from "react-router-dom";
+// import {
+//   MDBBtn,
+//   MDBCard,
+//   MDBCardBody,
+//   MDBCardImage,
+//   MDBCol,
+//   MDBContainer,
+//   MDBIcon,
+//   // MDBInput,
+//   MDBRow,
+//   MDBTypography,
+// } from "mdb-react-ui-kit";
 import Header from "./Header/header";
-// import Footer from "./Footer/footer";
-import Allproduct from "./Allproduct";
+import AllProductLists from "./allproducts";
 
 const ProductList = () => {
-  const dispatch = useDispatch();
-  const ProductLists = useSelector((state) => state.productlist);
-  console.log(ProductLists);
+console.log("first")
+  const dispatch = useDispatch(fetchProducts);
+  const product = useSelector((state) => state.product.productlist.products);
+  
   useEffect(() => {
-    dispatch(loadproduct());
+    async function fetchData() {
+     await dispatch((fetchProducts()));
+    }
+ fetchData()
   }, [dispatch]);
 
+console.log("direct",product)
   return (
     <>
       <Header />
-      <Allproduct ProductList={ProductLists}/>
-      {/* <Footer/> */}
+ <AllProductLists product={product}/>
     </>
   );
 };
