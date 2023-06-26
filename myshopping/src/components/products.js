@@ -10,8 +10,8 @@ const ProductList = () => {
   const dispatch = useDispatch(fetchProducts);
 
   //set the value of products from state object
-  const product = useSelector((state) => state.product.productlist.products);
-  
+  const product = useSelector((state) => state.product.productlist);
+
   useEffect(() => {
     async function fetchData() {
       await dispatch(fetchProducts());

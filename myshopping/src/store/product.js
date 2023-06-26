@@ -2,7 +2,7 @@ import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
 
 // Call Api thru fetch and get data into json format thru use json()
 export const fetchProducts = createAsyncThunk("fetchProducts", async ()=>{
-    const response = await fetch("https://dummyjson.com/products");
+    const response = await fetch("/api");
     return response.json();
 })
 
