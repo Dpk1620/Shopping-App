@@ -1,5 +1,5 @@
 const express = require("express");
-// use express
+// use express 
 const app = express();
 
 // import db for mongodb connection
@@ -17,3 +17,4 @@ app.get("/api", async (req, res) => {
 
 // app listen for 5000
 app.listen("5000")
+console.log("server connect");
